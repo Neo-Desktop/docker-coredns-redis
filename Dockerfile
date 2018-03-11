@@ -7,7 +7,7 @@ RUN apk --no-cache add bash bind-tools ca-certificates openssl git && \
 
 RUN go get -d -v github.com/coredns/coredns && \
     go get -d -v github.com/mholt/caddy/onevent && \
-    go get -d -v github.com/hawell/redis
+    go get -d -v github.com/Neo-Desktop/redis
 
 RUN cd /go/src/github.com/coredns/coredns && \
     echo "redis:github.com/Neo-Desktop/redis" | tee -a plugin.cfg && \
